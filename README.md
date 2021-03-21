@@ -13,6 +13,8 @@ Install addons dependencies `[OFFolder]/addons` :
 
 Clone this repository inside `[OFFolder]/apps/myApps`
 
+Copy `bin/data/config.example.xml` to `bin/data/config.xml` and configure the project to your needs
+
 Build and run the project
 
 ```

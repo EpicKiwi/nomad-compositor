@@ -32,4 +32,8 @@
 *.app
 
 obj
-bin
+bin/*
+
+!bin/data
+bin/data/config.xml
+bin/data/ofxvrpipe*

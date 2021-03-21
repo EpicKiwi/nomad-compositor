@@ -1,2 +1,3 @@
 ofxVideoRecorder
 ofxPoco
+ofxXmlSettings

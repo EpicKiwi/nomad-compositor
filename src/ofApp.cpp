@@ -2,10 +2,16 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+
+	config.loadFile("config.xml");
+	string streamKey = config.getValue("config:streamkey", "");
+
+	ofLog() << "Using stream key " << streamKey;
+
     int fps = 30;
 	ofSetFrameRate(fps);
     currentFrame.allocate(ofGetWidth(), ofGetHeight(), GL_RGB);
-	//liveStreamer.setup(currentFrame.getWidth(), currentFrame.getHeight(), fps, "//STREAMKEY//");
+	//liveStreamer.setup(currentFrame.getWidth(), currentFrame.getHeight(), fps, streamKey);
 
 	radius = 100;
 	isGrowing = true;

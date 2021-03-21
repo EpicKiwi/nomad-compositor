@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "liveStreamer.h"
+#include "ofxXmlSettings.h"
 
 class ofApp : public ofBaseApp{
 
@@ -12,6 +13,7 @@ class ofApp : public ofBaseApp{
 
 	protected:
 
+		ofxXmlSettings config;
 		LiveStreamer liveStreamer;
 
 		ofFbo currentFrame;
